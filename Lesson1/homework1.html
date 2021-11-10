@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HW1JS</title>
+</head>
+<body>
+
+
+<script>
+    // - Створити змінні. Присвоїти кожному з них значення: 'hello','owu','com', 'ua', 1, 10, -999, 123, 3.14, 2.7, 16, true, false.
+    //     Вивести кожну змінну за допомогою: console.log , alert, document.write
+     at = 'hello';
+    console.log('hello');
+    alert('hello');
+    document.write('hello');
+    bt = 'owu';
+    console.log('owu');
+    alert('owu');
+    document.write('owu');
+     ct = 'com';
+    console.log('com');
+    alert('com');
+    document.write('com');
+     dt = 'ua';
+    console.log('ua');
+    alert('ua');
+    document.write('ua');
+     et = 1;
+    console.log(1);
+    alert(1);
+    document.write(1);
+     ft = 10;
+    console.log(10);
+    alert(10);
+    document.write(10);
+     gt = -999;
+    console.log(-999);
+    alert(-999);
+    document.write(-999);
+     ht = 123;
+    console.log(123);
+    alert(123);
+    document.write(123);
+     it = 3.14;
+    console.log(3.14);
+    alert(3.14);
+    document.write(3.14);
+     jt = 2.7;
+    console.log(2.7);
+    alert(2.7);
+    document.write(2.7);
+     kt = 16;
+    console.log(16);
+    alert(16);
+    document.write(16);
+     lt = true;
+    console.log(true);
+    alert(true);
+    document.write(true);
+     mt = false;
+    console.log(false);
+    alert(false);
+    document.write(false);
+
+    // - Переприсвоїти кожній змінній з завдання значення на довільне.
+    //     Вивести кожну змінну за допомогою: console.log , alert, document.write
+    at = 'at'
+    console.log('at');
+    alert('at');
+    document.write('at');
+    bt = 'bt';
+    console.log('bt');
+    alert('bt');
+    document.write('bt');
+    ct = 'ct';
+    console.log('ct');
+    alert('ct');
+    document.write('ct');
+    dt = 'dt';
+    console.log('dt');
+    alert('dt');
+    document.write('dt');
+    et = 'et';
+    console.log('et');
+    alert('et');
+    document.write('et');
+    ft = 'ft';
+    console.log('ft');
+    alert('ft');
+    document.write('ft');
+    gt = 'gt';
+    console.log('gt');
+    alert('gt');
+    document.write('gt');
+    ht = 'ht';
+    console.log('ht');
+    alert('ht');
+    document.write('ht');
+    it = 'it';
+    console.log('it');
+    alert('it');
+    document.write('it');
+    jt = 'jt';
+    console.log('jt');
+    alert('jt');
+    document.write('jt');
+    kt = 'kt';
+    console.log('kt');
+    alert('kt');
+    document.write('kt');
+    lt = 'lt';
+    console.log('lt');
+    alert('lt');
+    document.write('lt');
+    mt = 'mt';
+    console.log('mt');
+    alert('mt');
+    document.write('mt');
+
+    // - Створити 3 змінних firstName, middleName, lastName, наповнити їх своїм ПІБ. З'єднати їх в одну змінну person. (Не об'єкт)
+    let person = {firstName: 'Анатолій', middleName: 'Анатолійович', lastName: 'Воєвудка'}
+        console.log(person);
+
+    // - За допомогою 3х різних prompt() отримати 3 слова які являються вашими Імям, По-Батькові та роками.
+    let firstName = prompt('Enter your firstName');
+    let middleName = prompt('Enter your middleName');
+    let age = prompt('Enter your age');
+    //     Вивести "Вітаю *Імя* *По батькові*. Тобі *вік* років".
+     let res = alert( 'Вітаю '+ firstName + ' '+  middleName + '. Тобі '+ age + ' років.');
+    // - За допомогою оператора typeof визначити типи наступних змінних та вивести їх в консоль.
+    //     let a = 100; let b = '100'; let c = true;
+    let a = 100;
+    console.log(typeof a);
+    let b = '100';
+    console.log(typeof '100');
+    let c = true;
+    console.log(typeof true);
+
+    // - Визначити відповідний оператор в виразах що б вийшов відповідний результат.
+    //     В однакових виразах не використовувати однакові оператори!!!
+    //     5 ? 6 -> true
+    console.log(5<=6);
+    // 5 ? 6 -> false
+    console.log(5>=6);
+    // 5 ? 6 -> false
+    console.log(5==6);
+    // 5 ? 6 -> false
+    console.log(5===6);
+    // 10 ? 10 -> true
+    console.log(10==10);
+    // 10 ? 10 -> true
+    console.log(10===10);
+    // 10 ? 10 -> false
+    console.log(10!=10);
+    // 10 ? 10 -> false
+    console.log(10<=10);
+    // 10 ? 10 -> false
+    console.log(10!=10);
+    // 123 ? '123' -> false
+    console.log(123!=123);
+    // 123 ? '123' -> true
+    console.log(123==123);
+
+    // - Подумайте Какие значения выведет в окно браузера следующий фрагмент кода?  и почему?
+    //     let str = "20";
+    // let a = 5;
+    // document.write(str + a + "<br/>");
+    // document.write(str - a + "<br/>");
+    // document.write(str * "2" + "<br/>");
+    // document.write(str / 2 + "<br/>");
+
+   //Вийде :
+    // 205 склало як 20 i 5 = 205 (стрiнг
+    //15 виконало математичну дiю (стрiнг повыв себе як цифра)
+    //40 виконало математичну дiю (стрiнг повыв себе як цифра)
+    //10 виконало математичну дiю (стрiнг повыв себе як цифра)"
+
+
+</script>
+</body>
+</html>
