@@ -13,55 +13,55 @@
 <script>
     // - Створити змінні. Присвоїти кожному з них значення: 'hello','owu','com', 'ua', 1, 10, -999, 123, 3.14, 2.7, 16, true, false.
     //     Вивести кожну змінну за допомогою: console.log , alert, document.write
-     at = 'hello';
+    let at = 'hello';
     console.log('hello');
     alert('hello');
     document.write('hello');
-    bt = 'owu';
+    let bt = 'owu';
     console.log('owu');
     alert('owu');
     document.write('owu');
-     ct = 'com';
+    let ct = 'com';
     console.log('com');
     alert('com');
     document.write('com');
-     dt = 'ua';
+    let dt = 'ua';
     console.log('ua');
     alert('ua');
     document.write('ua');
-     et = 1;
+    let et = 1;
     console.log(1);
     alert(1);
     document.write(1);
-     ft = 10;
+    let ft = 10;
     console.log(10);
     alert(10);
     document.write(10);
-     gt = -999;
+    let gt = -999;
     console.log(-999);
     alert(-999);
     document.write(-999);
-     ht = 123;
+    let ht = 123;
     console.log(123);
     alert(123);
     document.write(123);
-     it = 3.14;
+    let it = 3.14;
     console.log(3.14);
     alert(3.14);
     document.write(3.14);
-     jt = 2.7;
+    let jt = 2.7;
     console.log(2.7);
     alert(2.7);
     document.write(2.7);
-     kt = 16;
+    let kt = 16;
     console.log(16);
     alert(16);
     document.write(16);
-     lt = true;
+    let lt = true;
     console.log(true);
     alert(true);
     document.write(true);
-     mt = false;
+    let mt = false;
     console.log(false);
     alert(false);
     document.write(false);
@@ -123,14 +123,14 @@
 
     // - Створити 3 змінних firstName, middleName, lastName, наповнити їх своїм ПІБ. З'єднати їх в одну змінну person. (Не об'єкт)
     let person = {firstName: 'Анатолій', middleName: 'Анатолійович', lastName: 'Воєвудка'}
-        console.log(person);
+    console.log(person);
 
     // - За допомогою 3х різних prompt() отримати 3 слова які являються вашими Імям, По-Батькові та роками.
     let firstName = prompt('Enter your firstName');
     let middleName = prompt('Enter your middleName');
     let age = prompt('Enter your age');
     //     Вивести "Вітаю *Імя* *По батькові*. Тобі *вік* років".
-     let res = alert( 'Вітаю '+ firstName + ' '+  middleName + '. Тобі '+ age + ' років.');
+    console.log('Вітаю ' + firstName + ' ' + middleName + '. Тобі ' + age + ' років.');
     // - За допомогою оператора typeof визначити типи наступних змінних та вивести їх в консоль.
     //     let a = 100; let b = '100'; let c = true;
     let a = 100;
@@ -143,27 +143,27 @@
     // - Визначити відповідний оператор в виразах що б вийшов відповідний результат.
     //     В однакових виразах не використовувати однакові оператори!!!
     //     5 ? 6 -> true
-    console.log(5<=6);
+    console.log(5 <= 6);
     // 5 ? 6 -> false
-    console.log(5>=6);
+    console.log(5 >= 6);
     // 5 ? 6 -> false
-    console.log(5==6);
+    console.log(5 == 6);
     // 5 ? 6 -> false
-    console.log(5===6);
+    console.log(5 === 6);
     // 10 ? 10 -> true
-    console.log(10==10);
+    console.log(10 == 10);
     // 10 ? 10 -> true
-    console.log(10===10);
+    console.log(10 === 10);
     // 10 ? 10 -> false
-    console.log(10!=10);
+    console.log(10 != 10);
     // 10 ? 10 -> false
-    console.log(10<=10);
+    console.log(10 <= 10);
     // 10 ? 10 -> false
-    console.log(10!=10);
+    console.log(10 != 10);
     // 123 ? '123' -> false
-    console.log(123!=123);
+    console.log(123 != 123);
     // 123 ? '123' -> true
-    console.log(123==123);
+    console.log(123 == 123);
 
     // - Подумайте Какие значения выведет в окно браузера следующий фрагмент кода?  и почему?
     //     let str = "20";
@@ -173,7 +173,7 @@
     // document.write(str * "2" + "<br/>");
     // document.write(str / 2 + "<br/>");
 
-   //Вийде :
+    //Вийде :
     // 205 склало як 20 i 5 = 205 (стрiнг з'єднався з цифрою 5)
     //15 виконало математичну дiю (стрiнг повiв себе як цифра)
     //40 виконало математичну дiю (стрiнг повiв себе як цифра)
