@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Template1.1</title>
+</head>
+<body>
+<!--        template 1.1-->
+<!--<ul>-->
+<!--    <li>ITEM OF ARRAY</li>-->
+<!--    &lt;!&ndash;-->
+<!--    інші об'єкти масиву-->
+<!--  ...-->
+<!--  ...-->
+<!--  ...-->
+<!--    &ndash;&gt;-->
+<!--</ul>-->
+
+<script>
+    /*
+    Використовуючи данні з масиву, за допомоги document.write та циклу
+    побудувати структуру по шаблону template1.1
+    */
+
+    let listOfItems = ['html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'angular', 'node.js'];
+    document.write('<ul>');
+    for (let i = 0; i < listOfItems.length; i++) {
+
+        document.write(`<li>${listOfItems[i]}</li>`);
+    }
+    document.write('</ul>');
+
+</script>
+
+</body>
+</html>
