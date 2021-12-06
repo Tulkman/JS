@@ -19,10 +19,11 @@
 // Взяти файл template1.html та додати в нього скріпт котрий для кожного елементу масиву створює li та додає його до блоку .menu
 // Завдання робити через цикли.
 // let array = ['Main','Products','About us','Contacts'];
+// let ul = document.getElementsByClassName('menu')
 // for (let arrayKey in array) {
 //         let li = document.createElement('li');
-//         li.innerText = arrayKey ;
-//     document.body.appendChild(li)
+//         li.innerText = `${arrayKey}` ;
+//       document.body.appendChild(li);
 // }
 
 // - Є масив
@@ -36,7 +37,12 @@
 // ];
 // Для кожного елементу масиву зробити блок в якому вивести інформацію про title та monthDuration
 // Завдання робити через цикли.
-//
+// for (const course of coursesAndDurationArray) {
+//     let divElement = document.createElement('div');
+//     divElement.innerText = `${course.title} ${course.monthDuration}`;
+//     document.body.appendChild(divElement);
+// }
+
 // - Є масив
 // let coursesAndDurationArray = [
 //     {title: 'JavaScript Complex', monthDuration: 5},
@@ -48,3 +54,13 @@
 // ];
 // За допомоги скріпта для кожного елементу масиву зробити <div class='item'> ,  в якому буде <h1 class='heading'>  з title  елементу, та <p class='description'> з monthDuration елементу.
 //     Завдання робити через цикли.
+// for (const course of coursesAndDurationArray) {
+//     let divElement = document.createElement('div');
+//     let h1 = document.createElement('h1');
+//     h1.innerText = course.title;
+//     let p = document.createElement('p');
+//     p.innerText = course.monthDuration;
+//     divElement.appendChild(h1);
+//     divElement.appendChild(p);
+//     document.body.appendChild(divElement);
+// }
