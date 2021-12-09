@@ -1,0 +1,15 @@
+div {
+    border: darkred solid 2px;
+    padding: 5px;
+    background-color: silver;
+}
+a {
+    font-size: 40px;
+}
+.user {
+    display: flex;
+    margin: 10px;
+}
+button {
+    margin-left: auto;
+}
