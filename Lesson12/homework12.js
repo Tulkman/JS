@@ -12,14 +12,14 @@ fetch('https://jsonplaceholder.typicode.com/posts')
         let postDiv = document.createElement('div');
         postDiv.classList.add('postDiv');
         for (let item of posts) {
-            let Card = document.createElement('div');
-            Card.classList.add('post');
-            Card.innerHTML = `
+            let postCard = document.createElement('div');
+            postCard.classList.add('postCard');
+            postCard.innerHTML = `
                     <h3>id - ${item.id}</h3>
                     <h4>Title: ${item.title}</h4>
-                    <p>Content: ${item.body}</p>
+                    <p>Body: ${item.body}</p>
                     `;
-            postDiv.appendChild(Card);
+            postDiv.appendChild(postCard);
             document.body.appendChild(postDiv);
         }
     });

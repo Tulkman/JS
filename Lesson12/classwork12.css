@@ -3,14 +3,13 @@ body {
     justify-content: center;
 }
 
-.postDiv {
+.commentDiv {
     width: 1200px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
-
-.postCard {
+.commentCard {
     width: 220px;
     height: auto;
     margin: 10px;
@@ -19,18 +18,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    cursor: cell;
-}
-
-.postCard h3 {
-    color: blue;
-    margin: 0;
-}
-
-.postCard h4 {
-    height: 50px;
-}
-.postCard  p {
-    color: green;
+    cursor: pointer;
 }
 
