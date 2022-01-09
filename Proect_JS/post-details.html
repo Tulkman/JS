@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>post-details</title>
+    <style>
+        .comments {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 20px;
+            border: 1px solid purple;
+                    }
+        .post{
+            border: 1px solid cornflowerblue;
+
+        }
+        .commentsObject {
+            width: 23%;
+            padding: 10px;
+            border: 1px solid red;
+            background-color: lightgray;
+
+        }
+        .box{
+            border: 1px solid purple;
+
+        }
+    </style>
+</head>
+<body>
+<script>
+    let postsNew = JSON.parse(localStorage.getItem('postsNew'));
+
+    let box = document.createElement('div')
+    box.className = 'box'
+    document.body.append(box)
+    postsNew.forEach(paramPost => {
+        let post = document.createElement('div')
+        post.className = 'post'
+        box.append(post)
+        for (const key in paramPost) {
+            let postsContents = document.createElement('div')
+            post.append(postsContents)
+            postsContents.innerText = `${key} : ${paramPost[key]}`
+
+        }
+        let postsButton = document.createElement('button')
+        postsButton.innerText = 'comments'
+        post.append(postsButton)
+        postsButton.onclick = () => {
+            fetch('https://jsonplaceholder.typicode.com/comments')
+                .then(item => item.json())
+                .then(item => {
+                    let comments = document.createElement('div')
+                    comments.className = 'comments'
+                    box.append(comments)
+
+                    item.forEach((commentsParam) => {
+
+                        if (paramPost.id === commentsParam.postId) {
+                            let commentsObject = document.createElement('div')
+                            commentsObject.className = 'commentsObject'
+                            comments.append(commentsObject)
+                            for (const key in commentsParam) {
+                                let commentsContent = document.createElement('div')
+                                commentsObject.append(commentsContent)
+                                commentsContent.innerText = `${key} : ${commentsParam[key]}`
+                            }
+                        }
+                    })
+
+                })
+            postsButton.disabled=true
+        }
+    })
+</script>
+</body>
+</html>
